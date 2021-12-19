@@ -1,18 +1,14 @@
 
 let number = +prompt();
-let isFail = true;
-
-
+let flag = true;
 
 for (let  j = 2;  j <= number-1;  j++) {
     if (number % j == 0) {
-        isFail = false;
+        flag = false;
         break;
-        }else{
-            
-    }
+        }
    }
-   if (isFail ) {
+   if (flag ) {
        alert(`${number} simple`);
        console.log(number);
     }else{
